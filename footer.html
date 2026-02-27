@@ -1,0 +1,93 @@
+{% comment %} 
+{% load static %}
+
+<footer class="footer">
+    <p>© 2026 MyApp. All Rights Reserved.</p>
+    <p>Privacy Policy<p>
+    <p>Terms<p>
+    <p>Help<p>
+    <div class="footer-links">
+        <a href="{% url 'private privacy' %}">Privacy Policy</a> 
+        <a href="{% url 'terms' %}">Terms</a>
+        <a href="{% url 'help' %}">Help</a> 
+    </div>
+</footer> {% endcomment %}
+
+
+{% load static %}
+
+<footer class="mega-footer">
+    <!-- Top CTA -->
+    <div class="footer-top">
+        <div class="footer-brand">
+            <img src="{% static 'images/pinklogo.png' %}" alt="Logo">
+            <span>The people platform</span>
+        </div>
+
+        <a href="#" class="footer-cta">
+            Create your own group <span>→</span>
+        </a>
+    </div>
+
+    <hr>
+
+    <!-- Footer Columns -->
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>Your account</h4>
+            <a href="#">Sign up</a>
+            <a href="#">Log in</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Discover</h4>
+            <a href="#">Groups</a>
+            <a href="#">Events</a>
+            <a href="#">Topics</a>
+            <a href="#">Cities</a>
+            <a href="#">Online events</a>
+            <a href="#">Local guides</a>
+            <a href="#">Make friends</a>
+            <a href="#">Sitemap</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Platform</h4>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Apps</a>
+            <a href="#">Podcast</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Follow us</h4>
+            <div class="social-icons">
+                <a href="#">f</a>
+                <a href="#">X</a>
+                <a href="#">▶</a>
+                <a href="#">◎</a>
+                <a href="#">♪</a>
+            </div>
+
+            <h4 class="app-title">Get the app</h4>
+            <div class="app-buttons">
+                <img src="{% static 'images/google-play.png' %}" alt="Google Play">
+                <img src="{% static 'images/app-store.png' %}" alt="App Store">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <p>© 2026 MyApp. All rights reserved.</p>
+
+        <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Help</a>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,252 @@
+
+/* 
+brown color css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f6f9f8; /* light background */
+    color: #3b2f2f; /* dark brown */
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: #ffffff;
+    padding: 14px 40px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 48px;
+    width: auto;
+}
+
+/* Header Layout */
+.header .logo,
+.header .nav-menu {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Navigation */
+.nav-menu {
+    float: right;
+    gap: 28px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #3b2f2f; /* dark brown */
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover underline effect */
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #2ec4b6; /* turquoise */
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #2ec4b6;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* ================= CONTENT ================= */
+main,
+.content {
+    padding: 60px 40px;
+    min-height: calc(100vh - 160px);
+}
+
+/* ================= FOOTER ================= */
+/* ================= FOOTER ================= */
+
+.mega-footer {
+    background: #2b1f1f; /* dark brown */
+    color: #eaeaea;
+    padding: 40px 60px 20px;
+}
+
+/* Top section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-brand img {
+    height: 40px;
+}
+
+.footer-brand span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.footer-cta {
+    color: #2ec4b6; /* turquoise */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer-cta span {
+    margin-left: 6px;
+}
+
+/* Divider */
+.mega-footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 30px 0;
+}
+
+/* Columns */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-col h4 {
+    font-size: 15px;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.footer-col a {
+    display: block;
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: #be9e467e;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* App buttons */
+.app-title {
+    margin-top: 10px;
+}
+
+.app-buttons img {
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Bottom bar */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(117, 71, 4, 0.486);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.footer-links a {
+    margin-left: 15px;
+    color: #bdbdbd;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #cddc91;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* 
+@media (max-width: 500px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+} */
+
+/* ================= RESPONSIVE =================
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 20px;
+    }
+
+    .nav-menu {
+        gap: 16px;
+        font-size: 14px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+} */
