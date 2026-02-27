@@ -1,0 +1,58 @@
+
+
+
+
+{% load static %}
+
+<head>
+    <title>{% block title %}MyPlatform{% endblock %}</title>
+</head>
+
+<header class="header">
+    <!-- Logo -->
+    <div class="logo">
+        {% comment %} <img src="{% static 'images/pinklogo.png' %}" alt="Logo"> {% endcomment %}
+        
+        {% comment %} <span>MyPlatform</span> {% endcomment %}
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <!-- Navigation -->
+
+    {% include 'core/header.html' %}
+    {% comment %} <nav class="nav-menu">
+        <a href="{% url 'events' %}">Event</a>
+        <a href="{% url 'business' %}">Business</a>
+        <a href="{% url 'community' %}">Community</a>
+        <a href="{% url 'volunteer' %}">Volunteer</a>
+        <a href="{% url 'about' %}">About Us</a>
+    </nav> {% endcomment %}
+{% comment %} 
+    <!-- Auth Buttons -->
+    <div class="nav-actions">
+        {% if user.is_authenticated %}
+            <span class="welcome">Hi, {{ user.username }}</span>
+            <a href="{% url 'logout' %}" class="login-btn">Logout</a>
+        {% else %}
+            <a href="{% url 'login' %}" class="login-btn">Login</a>
+            <a href="{% url 'signup' %}" class="join-btn">Join Now</a>
+        {% endif %}
+    </div> {% endcomment %}
+    </div>
+</header>
+
+
+{% block content %}
+{% endblock %}
+
+
+{% include 'core/footer.html' %}
+
+{% comment %} 
+<footer class="footer">
+    <p>© 2026 MyApp. All Rights Reserved.</p>
+    <div class="footer-links">
+        {% comment %} <a href="{% url 'privacy' %}">Privacy Policy</a> {% endcomment %}
+        {% comment %} <a href="{% url 'terms' %}">Terms</a>
+        <a href="{% url 'help' %}">Help</a> {% endcomment %}
+    </div>
+</footer> 
